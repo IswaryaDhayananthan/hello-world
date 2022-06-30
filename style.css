@@ -1,8 +1,27 @@
 h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     color: red;
 }
 .userform{
-    align-content: center;
+    text-align: center;
+}
+.container{
+    display: grid;
+    border: 1px black solid;
+    grid-template: 100px 200px 100px / repeat(2, 100px) ;
+}
+.a{
+    grid-area: 1 / 1 /  2 / 3;
+}
+.b{
+    grid-area: 2 / 1 / span 1 / span 1;
+    
+}
+.c{
+    grid-area: 2 / 2 / span 1 / span 1;
+   
+}
+.d{
+    grid-area: 3 / 1 / span 1 / span 2;
 }
