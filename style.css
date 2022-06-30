@@ -6,3 +6,22 @@ h1{
 .userform{
     text-align: center;
 }
+.container{
+    display: grid;
+    border: 1px black solid;
+    grid-template: 100px 200px 100px / repeat(2, 100px) ;
+}
+.a{
+    grid-area: 1 / 1 /  span 1 / span 2;
+}
+.b{
+    grid-column: 2 / 1 / span 1 / span 1;
+    text-align: right;
+}
+.c{
+    grid-column: 2 / 2 / span 1 / span 1;
+    text-align: left;
+}
+.d{
+    grid-column: 3 / 1 / span 1 / span 2;
+}
